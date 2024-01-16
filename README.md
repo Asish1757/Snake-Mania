@@ -2,7 +2,7 @@
 
 *A pure HTML5 classic game of Snake.*
 
-![Snake](https://github.com/Asish1757/Snake_Game/blob/main/screenshot.jpg)
+![Snake](https://github.com/Asish1757/Snake-Mania/blob/main/screenshot.jpg)
 
 **[PLAY THE GAME HERE](https://asish1757.github.io/Snake-Mania/)**
 ## Input
