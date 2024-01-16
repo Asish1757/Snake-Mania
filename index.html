@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snake Mania</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="snake, html5, game">
+    <meta name="author" content="Asish Jena">
+    <meta name="Robots" content="All" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Load stylesheets -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+
+</head>
+
+<body id="main">
+    <!-- Loading screen -->
+    <div id="loader">
+        <h1 id="loader-title">Snake</h1>
+        <p id="loading-text">Loading...</p>
+        <div id="bar-container">
+            <div id="bar"></div>
+        </div>
+    </div>
+    <!-- end loading screen -->
+
+    <!-- Main container -->
+    <div id="container">
+        <!-- Page header -->
+        <a href="https://asish1757.github.io/Snake_Game/">
+            <h1>Snake</h1>
+        </a>
+        <h3>A pure HTML5 classic game</h3>
+        <!-- end header -->
+
+        <div id="game-container">
+            <div id="canvas-container">
+                <!-- Canvas -->
+                <canvas id="canvas">Your browser doesn't support HTML5! Please upgrade your browser.</canvas>
+
+                <!-- Canvas overlay box -->
+                <div id="canvas-overlay">
+                    <div id="overlay-inner">
+                        <span id="overlay-text" data-action="play">Play</span>
+                    </div>
+                </div>
+                <!-- end overlay -->
+            </div>
+            <!-- end canvas container -->
+
+            <!-- Adding bonus score -->
+            <div class="bonus-text"></div>
+            <!-- Score display -->
+            <div id="score-container">
+                <div id="score-text">Score</div>
+                <div id="score-num">0</div>
+            </div>
+
+            <!-- Speed selection -->
+            <div id="speed-container">
+                <div id="speed-text">Speed</div>
+                <input type="range" min="5" max="20" value="12" id="speed-fader">
+                <div id="speed-labels">
+                    <span id="speed-min">Min</span>
+                    <span id="speed-max">Max</span>
+                </div>
+            </div>
+
+            <!-- Border selection -->
+            <div id="border-selection-container">
+                <div id="border-text">No Border</div>
+                <input type="checkbox" id="border-selector" name="border-selector" class="switch" />
+                <label for="border-selector">Active</label>
+            </div>
+
+        </div>
+
+        <!-- Instructions -->
+        <section id="instructions">
+            <h2>Instructions</h2>
+            <p>Select speed and play! Use arrow keys to move, ESC or P to pause game. The lower the speed, the less are
+                the
+                points you can get. Don't miss the fruits!<br>
+                If you collide with borders you will lose the game, but you can choose to activate borders!</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p id="play-counter"></p>
+            <p>Made by <a href="https://github.com/Asish1757" target="_blank">Asish Jena</a></p>
+        </footer>
+        <!-- end Footer -->
+    </div>
+    <!-- end container -->
+
+    <!-- Github ribbon -->
+    <a href="https://github.com/Asish1757/Snake_Game" target="_blank" class="github-ribbon">
+        <img style="height: 25px; margin: 10px 10px;" src="img/github Icon.jpg Icon.jpg" alt="Fork on GitHub"></a>
+
+    <!-- Load scripts -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/loader.js"></script>
+
+</body>
+
+</html>
