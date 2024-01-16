@@ -4,7 +4,7 @@
 
 ![Snake](https://github.com/Asish1757/Snake_Game/blob/main/screenshot.jpg)
 
-**[PLAY THE GAME HERE](https://asish1757.github.io/Snake_Game/)**
+**[PLAY THE GAME HERE](https://asish1757.github.io/Snake-Mania/)**
 ## Input
 
 <table>
